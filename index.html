@@ -150,7 +150,11 @@
                       ></a>
                     </li>
                     <li class="navbar-item ml-auto">
-                      <a href="#" class="nav-link"
+                      <a
+                        href="#"
+                        class="nav-link"
+                        data-toggle="modal"
+                        data-target="#sign-out"
                         ><i class="fas fa-sign-out-alt fa-lg text-danger"></i
                       ></a>
                     </li>
@@ -164,6 +168,32 @@
       </div>
     </nav>
     <!-- ########## End of Navbar ########### -->
+
+    <!-- ############# Modal ############# -->
+    <div class="modal fade" id="sign-out">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Want to leave?</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            Press logout to leave
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">
+              Stay Here
+            </button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Logout
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ############# End of Modal ############# -->
 
     <!-- Bootstrap JS -->
     <script
